@@ -1,0 +1,16 @@
+{
+  "name": "gcs-backend-typescript-lasc-2023",
+  "version": "1.0.0",
+  "description": "GCS Backend build in Node.js and Typescript for LASC Competiton 2023",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.4.5",
+    "typescript": "^5.1.6"
+  }
+}
