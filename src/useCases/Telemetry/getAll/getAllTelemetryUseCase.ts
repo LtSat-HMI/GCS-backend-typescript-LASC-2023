@@ -1,18 +1,13 @@
 import { ITelemetryRepository } from "@/repositories/interfaces/ITelemetryRepository";
-import { getPayloadDTO } from "./getPayloadDTO";
 
-export class getPayloadUseCase {
+export class getAllTelemetryUseCase {
     constructor(
         private telemetryRepository: ITelemetryRepository,
     ) {}
-    async execute(
-        data: getPayloadDTO
-    ) {
-        if (data.countId) {
-        const payload = await this.telemetryRepository.findForCount(data.countId);
+    async execute() {
+        const payload = await this.telemetryRepository.findAll();
         if (payload && payload != undefined) {
             return payload;
-        }
         }
     }
 }
